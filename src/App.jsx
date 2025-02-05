@@ -1,10 +1,21 @@
 import './App.css'
 
+import { LandingPage } from './components/pages/Landing';
+import { pageWrapper } from './components/layout/PageWrapper.jsx';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: pageWrapper(<LandingPage />)
+  }
+]);
+
 function App() {
 
   return (
     <>
-      <p>Frisk Wolfie&apos;s Customs</p>
+      <RouterProvider router={router} />
     </>
   )
 }
