@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+* {
+  @apply transition-all duration-300 ease-in-out;
+}
+
 .flex-c {
   @apply flex flex-col
 }
@@ -29,6 +33,18 @@ body {
 .button-navlink:hover {
   background-color: #2CB5E3;
 }
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #32CBFF;
+}
+a:hover {
+  background-color: #2CB5E3;
+}
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
