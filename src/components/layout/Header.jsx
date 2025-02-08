@@ -1,4 +1,4 @@
-import FwcLogo from '../../assets/fwc-logo.png'
+import PlaceholderFwcLogo from '../../assets/placeholder-fwc-logo.png'
 import { NavLink } from 'react-router-dom';
 
 export default function Header() {
@@ -8,7 +8,7 @@ export default function Header() {
             {/* FWC Logo */}
             <section className="flex-c items-center relative w-full mb-10">
                 <img
-                    src={FwcLogo}
+                    src={PlaceholderFwcLogo}
                     alt="Frisk Wolfie's Customs Logo"
                     className="max-w-full h-auto w-[40%] lg:w-[30%] xl:w-[20%] min-w-[200px] lg:min-w-[250px] xl:min-w-[300px]"
                 />

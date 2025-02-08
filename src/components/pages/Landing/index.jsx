@@ -1,7 +1,9 @@
+import PlaceholderClippy from '../../../assets/placeholder-clippy.png'
+
 export const LandingPage = () => {
     return (
         <>
-            <p>Frisk Wolfie&apos;s Customs Landing Page</p>
+            <img src={PlaceholderClippy} />
         </>
     )
 }

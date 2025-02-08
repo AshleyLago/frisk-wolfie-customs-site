@@ -45,6 +45,10 @@ a:hover {
   background-color: #2CB5E3;
 }
 
+img {
+  object-fit: contain
+}
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
