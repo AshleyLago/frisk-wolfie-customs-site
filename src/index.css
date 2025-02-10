@@ -1,11 +1,7 @@
 @import "tailwindcss";
 
 * {
-  @apply transition-all duration-300 ease-in-out;
-}
-
-.flex-c {
-  @apply flex flex-col
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -29,7 +25,6 @@ body {
   white-space: nowrap;
 }
 
-/* Hover effect */
 .button-navlink:hover {
   background-color: #2CB5E3;
 }
@@ -45,9 +40,24 @@ a:hover {
   background-color: #2CB5E3;
 }
 
-img {
-  object-fit: contain
+
+select {
+  background-color: white;
+  color: #32CBFF;
+  border: 2px solid #32CBFF;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
 }
+
+select:hover {
+  border-color: #2CB5E3;
+}
+
+select:active {
+  border-color: #1A8FB7;
+}
+
 
 /*
 :root {

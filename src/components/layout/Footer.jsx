@@ -21,7 +21,7 @@ export default function Footer() {
                 <img
                     src={instaLogo} 
                     alt="Instagram" 
-                    className="w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
+                    className="object-contain w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
                 />
             </a>
 
@@ -36,7 +36,7 @@ export default function Footer() {
                 <img
                     src={twitterLogo} 
                     alt="X (Twitter)" 
-                    className="w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
+                    className="object-contain w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
                 />
             </a>
 
@@ -51,7 +51,7 @@ export default function Footer() {
                 <img
                     src={tiktokLogo} 
                     alt="TikTok" 
-                    className="w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
+                    className="object-contain w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
                 />
             </a>
 
@@ -66,7 +66,7 @@ export default function Footer() {
                 <img
                     src={threadsLogo} 
                     alt="Threads" 
-                    className="w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
+                    className="object-contain w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
                 />
             </a>
 
@@ -81,7 +81,7 @@ export default function Footer() {
                 <img
                     src={bskyLogo} 
                     alt="Blue Sky" 
-                    className="w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
+                    className="object-contain w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
                 />
             </a>
 
@@ -96,7 +96,7 @@ export default function Footer() {
                 <img
                     src={youtubeLogo} 
                     alt="Youtube" 
-                    className="w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
+                    className="object-contain w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
                 />
             </a>
 
@@ -111,9 +111,10 @@ export default function Footer() {
                 <img
                     src={facebookLogo} 
                     alt="Facebook" 
-                    className="w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
+                    className="object-contain w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7"
                 />
             </a>
+            
         </footer>
     )
 }

@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header() {
     return (
-        <header className="mt-5 mb-10">
+        <header className="mt-5 mb-10 mx-10">
 
             {/* FWC Logo */}
-            <section className="flex-c items-center relative w-full mb-10">
+            <section className="flex flex-col items-center relative w-full mb-10">
                 <img
                     src={PlaceholderFwcLogo}
                     alt="Frisk Wolfie's Customs Logo"
