@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 import arrow from '../../../assets/arrow-left.svg';
 import cross from '../../../assets/close-x.svg';
@@ -82,27 +82,27 @@ export const PortfolioPage = () => {
 
 
     /* Close the modal and reset related state */
-    const closeModal = () => {
+    const closeModal = useCallback(() => {
         setIsModalOpen(false);
         setSelectedImage("");
         setPortfolioImages([]);
         setCurrentImageIndex(0);
         setImageInfo("");
-    };
+    }, []);
 
     /* Navigate to the previous image in the modal */
-    const goToPreviousImage = () => {
+    const goToPreviousImage = useCallback(() => {
         const newIndex = (currentImageIndex - 1 + portfolioImages.length) % portfolioImages.length;
         setSelectedImage(portfolioImages[newIndex]);
         setCurrentImageIndex(newIndex);
-    };
+    }, [currentImageIndex, portfolioImages]);
 
     /* Navigate to the next image in the modal */
-    const goToNextImage = () => {
+    const goToNextImage = useCallback(() => {
         const newIndex = (currentImageIndex + 1) % portfolioImages.length;
         setSelectedImage(portfolioImages[newIndex]);
         setCurrentImageIndex(newIndex);
-    };
+    }, [currentImageIndex, portfolioImages]);
 
 
 
@@ -122,7 +122,7 @@ export const PortfolioPage = () => {
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [isModalOpen, currentImageIndex, portfolioImages, goToNextImage, goToPreviousImage, closeModal]);
+    }, [isModalOpen, goToNextImage, goToPreviousImage, closeModal]);
 
 
     return (
